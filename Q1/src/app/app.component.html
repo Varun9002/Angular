@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <h4>Series=> 2,3,10,15,26,35,........</h4>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <label for="name">Enter index of the Series</label><br>
+      <input type="text" name="index" [(ngModel)]="input_index" />
+      <input class="btn btn-primary ml-1" type="button" (click)="calcTerm()" value="Calculate"/>
+      <p>Answer={{ ans }}</p>
+    </div>
+  </div>
+</div>

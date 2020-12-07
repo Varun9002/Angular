@@ -1,0 +1,15 @@
+<div class="top-left">
+  <app-comp-tl [text]="text"></app-comp-tl>
+</div>
+<div class="top-right">
+  <app-comp-tr [text]="text"></app-comp-tr>
+</div>
+<div class="center">
+  <app-comp-center (editText)="textEdited($event)"></app-comp-center>
+</div>
+<div class="bottom-left">
+  <app-comp-bl [text]="text"></app-comp-bl>
+</div>
+<div class="bottom-right">
+  <app-comp-br [text]="text"></app-comp-br>
+</div>

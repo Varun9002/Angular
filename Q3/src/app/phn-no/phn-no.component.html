@@ -1,0 +1,12 @@
+<form [formGroup]="phnoForm" class="form-group" (ngSubmit)="submitForm()">
+  <div formArrayName="phnos"  class="form-group">
+    <div class="form-group">
+      <input class="btn btn-primary" type="button" value="Add another Phone number" (click)="addPhno()">
+    </div>
+    <div class="form-group" *ngFor="let ph of getPhnos();let i =index">
+      Phone Number {{ i+1 }}: <input type="text" [formControlName]="i">
+    </div>
+  </div>
+  <input class="btn btn-success" type="submit" value="Submit" [disabled]="!phnoForm.valid">
+
+</form>
